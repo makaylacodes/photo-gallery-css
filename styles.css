@@ -19,13 +19,15 @@
 
   body{
     margin:0;
-    font-family: Arial;
-    background: #411919;
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    background: #cc9d9d;
+    color:white;
   }
 
   .header{
     padding: 32px;
-    background:#cea1a1a1;
+    background:#7633338f;
     text-align: center;
   }
 
@@ -48,4 +50,19 @@
    align-items:center;
    padding: 0 4px;
   }
-  /**/
+
+  /*I created a media query for screens smaller than 800px in width
+  Setting width to 50% will convert the gallery into a two-col layout*/
+  @media(max-width: 800px){
+    #gallery img{
+      width: 50%;
+    }
+  }
+
+  /*I created a media query for screens smaller than 600px in width
+  Setting width to 50% will convert the gallery into a one-col layout*/
+  @media (max-width: 600px){
+    #gallery img{
+      width: 100%;
+    }
+  }
