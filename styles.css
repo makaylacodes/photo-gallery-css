@@ -1,3 +1,51 @@
 *{
     box-sizing: border-box;
+}
+/*sets properties for the images*/
+#gallery img{
+    width: 25%;
+    height: 300px;
+    
+   /*User object-fit property determines how images should behave */
+   object-fit: cover;
+
+   /*Puts space between the images*/
+   margin-top: 8px;
+   padding: 0 4px;
+
+   /*How sharp the edges are*/
+   border-radius: 10px;
   }
+
+  body{
+    margin:0;
+    font-family: Arial;
+    background: #411919;
+  }
+
+  .header{
+    padding: 32px;
+    background:#cea1a1a1;
+    text-align: center;
+  }
+
+   /*Flexbox focuses on the flow of content*/
+  #gallery{
+    display:flex;
+
+    /*Flexbox can be thought of as having two axes, the main axis
+    and the cross axis.*/
+    flex-direction:row;
+
+   /*Flex-wrap determines how items should behave when the flex container
+   is too small. nowrap will prevent your items from wrapping*/
+   flex-wrap: wrap;
+
+   /*determines positions along the main axis, affecting their position 
+   and space around them*/
+   justify-content: center;
+
+   align-items:center;
+   padding: 0 4px;
+  }
+  /**/
